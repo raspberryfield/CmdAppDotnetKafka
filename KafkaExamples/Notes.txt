@@ -1,0 +1,18 @@
+
+
+* Must have a local Kafka instance/cluster running, or availeble on network..
+..I'm running Hyper-V, with one image Ubuntu server with Kafka installed..
+
+* https://github.com/confluentinc/confluent-kafka-dotnet
+* https://docs.confluent.io/current/clients/dotnet.html
+
+* Install nuget package. PM> Install-Package Confluent.Kafka
+
+Problems:
+* could not resolve name, https://support.microsoft.com/en-ph/help/172218/microsoft-tcp-ip-host-name-resolution-order
+>The error message was that ubuntuserver01 could not been resolved.
+* I added one row to C:\Windows\System32\drivers\etc\hosts
+172.17.209.219 ubuntuserver01
+*That line fixed the problem.
+
+
