@@ -22,7 +22,7 @@ namespace ConsoleApp1
             {
                 try
                 {
-                    var dr = await p.ProduceAsync("my_first_topic", new Message<Null, string> { Value = "test" });
+                    var dr = await p.ProduceAsync("my_first_topic", new Message<Null, string> { Value = "test2i" });
                     Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
                 }
                 catch (ProduceException<Null, string> e)
