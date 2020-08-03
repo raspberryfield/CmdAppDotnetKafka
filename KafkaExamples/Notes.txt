@@ -15,4 +15,16 @@ Problems:
 172.17.209.219 ubuntuserver01
 *That line fixed the problem.
 
+# Projects
+ConsoleApp1 - simple example produce/pblish/send message to kafka.
+ConsoleApp2 - Subscribe to Kafka topic.
+ConsoleApp3 - Produce message in protobuf format - https://www.matthowlett.com/2018-05-31-protobuf-kafka-dotnet.html 
+
+# ConsoleApp3 - Notes produce message in protobuf format.
+> Add class produced from protobuf compiler.
+> Follow: https://www.matthowlett.com/2018-05-31-protobuf-kafka-dotnet.html 
+> See repo "CmdAppdotnetProtobufExamples".
+> Add nuget Google.protobuf.
+> Set own serializer/dezerializer https://github.com/confluentinc/confluent-kafka-dotnet/blob/master/examples/Protobuf/Program.cs 
+
 
