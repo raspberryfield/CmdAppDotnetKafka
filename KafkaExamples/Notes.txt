@@ -27,4 +27,11 @@ ConsoleApp3 - Produce message in protobuf format - https://www.matthowlett.com/2
 > Add nuget Google.protobuf.
 > Set own serializer/dezerializer https://github.com/confluentinc/confluent-kafka-dotnet/blob/master/examples/Protobuf/Program.cs 
 
-
+# ConsoleApp4 - Example subscribe kafka topic with protobuf format.
+> Create new console app.
+> Add C# generated class from protoc protobufcompiler.
+> Nuget add Google.Protobuf and Confluent references.
+> Example: https://github.com/confluentinc/confluent-kafka-dotnet/blob/master/examples/Protobuf/Program.cs
+> https://www.matthowlett.com/2018-05-31-protobuf-kafka-dotnet.html
+> https://stackoverflow.com/questions/61169496/avrodeserializergenericrecord-does-not-contain-a-definition-for-assyncovera HELP!
+> https://github.com/confluentinc/confluent-kafka-dotnet/blob/26bc358ca4a25997ffe402a27a009726bd3a9838/src/Confluent.Kafka/SyncOverAsyncDeserializer.cs
