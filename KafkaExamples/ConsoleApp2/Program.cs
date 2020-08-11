@@ -14,7 +14,7 @@ namespace ConsoleApp2
             var conf = new ConsumerConfig
             {
                 GroupId = "test-consumer-group",
-                BootstrapServers = "172.17.209.219:9092",
+                BootstrapServers = "172.18.38.53:9092",
                 // Note: The AutoOffsetReset property determines the start offset in the event
                 // there are not yet any committed offsets for the consumer group for the
                 // topic/partitions of interest. By default, offsets are committed

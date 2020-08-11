@@ -16,7 +16,7 @@ namespace ConsoleApp3
 
             var config = new ProducerConfig
             {
-                BootstrapServers = "172.18.82.14:9092"
+                BootstrapServers = "192.168.39.121:9092"
           
             };
 
@@ -28,7 +28,7 @@ namespace ConsoleApp3
             {
                 try
                 {
-                    var dr = await producer.ProduceAsync("my_first_topic", new Message<Null, Person> { Value = new Person {Name = "Fredrik", Age = 34} });
+                    var dr = await producer.ProduceAsync("my_first_topic", new Message<Null, Person> { Value = new Person {Name = "Mishka", Age = 33} });
                     Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
                 }
                 catch (ProduceException<Null, string> e)
